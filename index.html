@@ -29,12 +29,12 @@
         </header>
 
         <main>
-            <section id="about" aria-labelledby="about-heading">
+            <section id="about" aria-labelledby="about-heading" class="reveal">
                 <h2 id="about-heading">About</h2>
                 <p>Second-year IoT Engineering student at Savonia University of Applied Sciences. Friendly, fast learner, and passionate about building software that bridges the physical and digital world. Looking to apply my skills in real-world projects and internship opportunities.</p>
             </section>
 
-            <section id="education" aria-labelledby="education-heading">
+            <section id="education" aria-labelledby="education-heading" class="reveal">
                 <h2 id="education-heading">Education</h2>
                 <div class="card">
                     <div class="card-header">
@@ -45,7 +45,7 @@
                 </div>
             </section>
 
-            <section id="skills" aria-labelledby="skills-heading">
+            <section id="skills" aria-labelledby="skills-heading" class="reveal">
                 <h2 id="skills-heading">Skills</h2>
                 <div class="skills-group">
                     <h3>Languages &amp; Frameworks</h3>
@@ -70,11 +70,11 @@
                 </div>
             </section>
 
-            <section id="projects" aria-labelledby="projects-heading">
+            <section id="projects" aria-labelledby="projects-heading" class="reveal">
                 <h2 id="projects-heading">Projects</h2>
                 <div class="projects-grid">
-                    <article class="card project-card">
-                        <img src="temmu.png" alt="Screenshot of the Temmu user interface">
+                    <article class="card project-card" data-repo="TetRex/Temmu">
+                        <img src="temmu.png" alt="Screenshot of the Temmu user interface" loading="lazy">
                         <div class="project-body">
                             <h3>Temmu</h3>
                             <p>User interface project built with Dart and Flutter, focusing on creating intuitive and modern user experiences. Demonstrates skills in Flutter development and UI design principles.</p>
@@ -83,11 +83,12 @@
                                 <span class="tag">Flutter</span>
                                 <span class="tag">UI/UX</span>
                             </div>
+                            <div class="repo-meta" aria-live="polite"></div>
                             <a href="https://github.com/TetRex/Temmu" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub</a>
                         </div>
                     </article>
-                    <article class="card project-card">
-                        <img src="smart-home.png" alt="Screenshot of the Smart Home Controller application">
+                    <article class="card project-card" data-repo="TetRex/Smart-Home-Controller">
+                        <img src="smart-home.png" alt="Screenshot of the Smart Home Controller application" loading="lazy">
                         <div class="project-body">
                             <h3>Smart Home Controller</h3>
                             <p>Smart home controller application developed in Dart, enabling seamless control of home devices. Integrates with various smart home protocols to provide a unified control interface.</p>
@@ -102,7 +103,7 @@
                 </div>
             </section>
 
-            <section id="interests" aria-labelledby="interests-heading">
+            <section id="interests" aria-labelledby="interests-heading" class="reveal">
                 <h2 id="interests-heading">Interests</h2>
                 <ul class="interests-list">
                     <li>UI/UX Design – creating intuitive, accessible interfaces</li>
