@@ -3,51 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyrylo Luhinin - Portfolio</title>
+    <meta name="description" content="Kyrylo Luhinin – IoT Engineering student and developer specialising in Flutter, Python, and C.">
+    <title>Kyrylo Luhinin – CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Kyrylo Luhinin</h1>
-        <p>I'm a second-year student at Savonia University in Kuopio. I'm studying the IoT Engineering
-Bachelor's program. I'm friendly, a quick learner, and easy to get along with. I can program in Python,
-C, Dart (Flutter), and am currently learning C# and ASP.NET Core development.</p>
-        <button id="theme-toggle">Toggle Theme</button>
-    </header>
-    <main id="main">
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <article>
-                <h3>Temmu</h3>
-                <img src="temmu.png" alt="Screenshot of the Temmu user interface project" width="800">
-                <p>User Interface project built with Dart, focusing on creating intuitive and modern user experiences. This project demonstrates skills in Flutter development and UI design principles.</p>
-                <p><a href="https://github.com/TetRex/Temmu">View on GitHub</a></p>
-            </article>
-            <article>
-                <h3>Smart Home Controller</h3>
-                <img src="smart-home.png" alt="Screenshot of the Smart Home Controller application">
-                <p>Smart home controller application developed in Dart, enabling seamless control of home devices. This IoT-focused project integrates with various smart home protocols to provide a unified control interface.</p>
-                <p><a href="https://github.com/TetRex/Smart-Home-Controller">View on GitHub</a></p>
-            </article>
-        </section>
-        <section id="interests">
-            <h2>Areas of Interest</h2>
-            <ul>
-                <li>UI/UX Design: Creating intuitive user interfaces</li>
-                <li>Smart Home Technology: Developing controllers for home automation</li>
-                <li>Dart and Flutter Development: Building cross-platform applications</li>
-                <li>Open Source Contributions: Engaging with the developer community</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/kyrylo-luhinin-64a70b353">LinkedIn</a></li>
-            <li><a href="https://github.com/TetRex">GitHub</a></li>
-        </ul>
-        <button id="click-counter">Click Me</button>
-    </footer>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Kyrylo Luhinin</h1>
+                    <p class="tagline">IoT Engineering Student &amp; Developer</p>
+                    <p class="location">📍 Kuopio, Finland</p>
+                </div>
+                <nav class="header-links" aria-label="Social links">
+                    <a href="https://www.linkedin.com/in/kyrylo-luhinin-64a70b353" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+                    <a href="https://github.com/TetRex" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+                <p>Second-year IoT Engineering student at Savonia University of Applied Sciences. Friendly, fast learner, and passionate about building software that bridges the physical and digital world. Looking to apply my skills in real-world projects and internship opportunities.</p>
+            </section>
+
+            <section id="education" aria-labelledby="education-heading">
+                <h2 id="education-heading">Education</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bachelor of Engineering – IoT Engineering</h3>
+                        <span class="badge">2024 – Present</span>
+                    </div>
+                    <p class="institution">Savonia University of Applied Sciences, Kuopio, Finland</p>
+                </div>
+            </section>
+
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="skills-group">
+                    <h3>Languages &amp; Frameworks</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag tag-learning">C# (learning)</span>
+                        <span class="tag tag-learning">ASP.NET Core (learning)</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Areas of Expertise</h3>
+                    <div class="tags">
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">IoT Systems</span>
+                        <span class="tag">Cross-platform Apps</span>
+                        <span class="tag">Smart Home Automation</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="projects-grid">
+                    <article class="card project-card">
+                        <img src="temmu.png" alt="Screenshot of the Temmu user interface">
+                        <div class="project-body">
+                            <h3>Temmu</h3>
+                            <p>User interface project built with Dart and Flutter, focusing on creating intuitive and modern user experiences. Demonstrates skills in Flutter development and UI design principles.</p>
+                            <div class="tags">
+                                <span class="tag">Dart</span>
+                                <span class="tag">Flutter</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <a href="https://github.com/TetRex/Temmu" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </article>
+                    <article class="card project-card">
+                        <img src="smart-home.png" alt="Screenshot of the Smart Home Controller application">
+                        <div class="project-body">
+                            <h3>Smart Home Controller</h3>
+                            <p>Smart home controller application developed in Dart, enabling seamless control of home devices. Integrates with various smart home protocols to provide a unified control interface.</p>
+                            <div class="tags">
+                                <span class="tag">Dart</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Smart Home</span>
+                            </div>
+                            <a href="https://github.com/TetRex/Smart-Home-Controller" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="interests" aria-labelledby="interests-heading">
+                <h2 id="interests-heading">Interests</h2>
+                <ul class="interests-list">
+                    <li>UI/UX Design – creating intuitive, accessible interfaces</li>
+                    <li>Smart Home Technology – home automation systems</li>
+                    <li>Flutter &amp; Dart – cross-platform application development</li>
+                    <li>Open Source – contributing to and learning from the community</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Kyrylo Luhinin &copy; 2026</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html></content>
