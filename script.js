@@ -1,26 +1,20 @@
-// Basic JavaScript for Portfolio
-
-// Variables
+// Theme toggle with localStorage persistence
 const themeButton = document.getElementById('theme-toggle');
-const clickButton = document.getElementById('click-counter');
-let clickCount = 0;
 let isDarkMode = false;
 
-// Functions
 function toggleTheme() {
     isDarkMode = !isDarkMode;
-    document.body.classList.toggle('dark');
-    console.log('Theme toggled, isDarkMode:', isDarkMode);
+    document.body.classList.toggle('dark', isDarkMode);
+    themeButton.textContent = isDarkMode ? '\u2600\ufe0f' : '\ud83c\udf19';
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 }
 
-function incrementCount() {
-    clickCount++;
-    console.log('Click count:', clickCount);
+// Restore saved theme on load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    isDarkMode = true;
+    document.body.classList.add('dark');
+    themeButton.textContent = '\u2600\ufe0f';
 }
 
-// Event handlers
 themeButton.addEventListener('click', toggleTheme);
-clickButton.addEventListener('click', incrementCount);
-
-// Initial console log
-console.log('Page loaded, JavaScript initialized');
